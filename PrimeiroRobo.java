@@ -19,7 +19,7 @@ import robocode.ScannedRobotEvent;
  * 
  * @author Joshua Galecki (original)
  */
-public class VelociRobot extends RateControlRobot {
+public class PrimeiroRobo extends RateControlRobot {
 
 	int turnCounter;
 	public void run() {
