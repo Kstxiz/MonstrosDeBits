@@ -23,12 +23,12 @@ jobs:
       - name: Compilar o Robô
         run: |
           mkdir -p build
-          javac -cp "libs/robocode.jar" -d build src/*.java
+          javac -cp "libs/robocode.jar" -d build PrimeiroRobo.java
 
       - name: Rodar Checkstyle
         run: |
           wget https://github.com/checkstyle/checkstyle/releases/download/checkstyle-10.12.4/checkstyle-10.12.4-all.jar -O checkstyle.jar
-          java -jar checkstyle.jar -c libs/google_checks.xml src/*.java
+          java -jar checkstyle.jar -c libs/google_checks.xml PrimeiroRobo.java
 
       - name: Rodar SpotBugs
         run: |
